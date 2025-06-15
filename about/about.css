@@ -235,6 +235,7 @@ body {
     height: auto;
     width: 400px;
     border-radius: 12px;
+    z-index: 99;
     animation: appear 2s linear;
   /* animation-timeline: view();
   animation-range: entry 0% cover 40%; */
@@ -252,6 +253,7 @@ body {
   }
   .text {
     width: 540px;
+    z-index: 99;
     animation: appear 1.5s linear;
 
   }
@@ -296,14 +298,14 @@ body {
 .about-container::before{
   position: absolute;
   content: '';
-  background: linear-gradient(65deg, #fc0679d5, rgb(22, 4, 88));
+  background: linear-gradient(45deg, #fc06796e, rgba(22, 4, 88, 0.781));
   height: 350px;
   width: 350px;
   border-radius: 50%;
   left: -12%;
   top:50%;
   overflow: hidden;
-  /* z-index: -99; */
+  z-index: 1;
   animation: object1 10s linear infinite;
 }
 .about-container::after{
