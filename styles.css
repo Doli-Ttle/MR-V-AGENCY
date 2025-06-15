@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 a {
@@ -33,6 +34,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   animation: transitionIn 0.75s;
+  scroll-behavior: smooth;
+  
 }
 @keyframes transitionIn {
   from{
@@ -51,6 +54,7 @@ body {
   background: linear-gradient(185deg, #07025c5b, #010122f3 );
   overflow: hidden;
 }
+
 .navbar{
   display: flex;
   justify-content: center;
@@ -197,7 +201,7 @@ body {
   /* overflow: hidden; */
 }
 
-.piece {
+/* .piece {
   right: 50%;
   bottom: 50%;
 }
@@ -294,7 +298,7 @@ body {
 }
 .piece:after {
   transform: scaleY(1.1547) skewX(30deg) rotate(120deg) skewX(-30deg) scaleY(0.86603);
-}
+} */
 /* .header__image spline-viewer {
   width: 100vw;
   max-width: 500px;
@@ -726,6 +730,26 @@ body {
   }
 } */
 
+.project-container .content .project1 .projectA i,
+.project-container .content .project2 .projectB i{
+  /* padding-left: 5%; */
+  /* display: inline-flex;
+  justify-content: flex-end; */
+  font-size: 30px;
+  /* outline: auto; */
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  color: var(--primary-color);
+  transition: 1s;
+}
+.project-container .content .project1 i:hover{
+  color: var(--text-light);
+}
+.project-container .content .project2 i:hover{
+  color: var(--text-light);
+}
+
 .project-container .content .project1 h2,
 .project-container .content .project2 h2{
   color: var(--primary-color);
@@ -875,6 +899,13 @@ body {
   font-size: 1.3rem;
   padding-left: 20px;
   text-decoration: none;
+}
+#footer .p{
+  display: flex;
+  justify-content: end;
+}
+#footer .p:hover{
+  color: var(--primary-color);
 }
 .copyright{
 color: #fff;

@@ -6,10 +6,21 @@
   width: 100%;
   padding: 60px 0;
   /* outline: auto; */
+  scroll-behavior: smooth;
 }
 .slide-container {
   margin: 0 0px;
   overflow: hidden;
+}
+.slide-container h2{
+  color: #fff;
+  font-weight: 300;
+  font-family: monospace;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1%;
+  text-decoration: underline #ff0147;
+
 }
 /* .card-wrapper{
   width: 50%;
@@ -24,6 +35,12 @@
   padding: 20px;
   font-size: 10px;
   color: #ffffffaf;
+}
+.P-card .image-box p{
+  /* outline: auto; */
+  line-height: 16px;
+  font-size: 13px;
+  /* text-align: end; */
 }
 
 .P-card .image-box img {
